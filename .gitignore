@@ -1,0 +1,8 @@
+artifacts/
+local/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
+.venv/
+*.pkl
+*.npy

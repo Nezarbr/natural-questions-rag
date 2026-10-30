@@ -1,0 +1,16 @@
+# Pinned for the RunPod re-run. torch + CUDA come from the RunPod PyTorch template.
+# transformers 4.46.3 is the version the original Kaggle notebooks pinned; the rest are
+# chosen to be compatible with it (sentence-transformers 3.x needs transformers < 5,
+# transformers 4.46 needs huggingface-hub < 1.0).
+transformers==4.46.3
+huggingface-hub==0.26.2
+sentence-transformers==3.3.1
+datasets==3.1.0
+accelerate==1.1.1
+peft==0.13.2
+sentencepiece==0.2.0
+faiss-cpu==1.9.0
+bitsandbytes==0.44.1
+# the RunPod PyTorch image sets HF_HUB_ENABLE_HF_TRANSFER=1, so HF downloads fail without it
+hf-transfer==0.1.8
+tqdm
